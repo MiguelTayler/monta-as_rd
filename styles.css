@@ -1,0 +1,20 @@
+:root{
+  --verde:#1f5f3b;
+  --verde-oscuro:#0c3322;
+  --verde-claro:#dcedc8;
+  --azul:#1e88a8;
+  --crema:#fff8e7;
+  --dorado:#d6a737;
+  --tierra:#8d5a2b;
+  --texto:#243026;
+  --blanco:#ffffff;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:linear-gradient(180deg,#f7fff0,#eef8ff);color:var(--texto);line-height:1.65}
+header.hero{min-height:430px;padding:32px 7%;color:white;background:linear-gradient(rgba(5,30,20,.65),rgba(5,30,20,.75)), radial-gradient(circle at 20% 20%,#6fbf73,transparent 35%), linear-gradient(135deg,#10451f,#2d6a4f 45%,#1e88a8);position:relative;overflow:hidden;border-bottom:8px solid var(--dorado)}
+header.hero:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-1px;height:130px;background:linear-gradient(150deg,transparent 20%,#174b2e 21% 34%,transparent 35%),linear-gradient(25deg,transparent 25%,#21623e 26% 44%,transparent 45%);opacity:.9}
+.logo{font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#ffe8a3}.hero-content{max-width:900px;position:relative;z-index:2;margin-top:60px}.hero h1{font-size:clamp(2.1rem,5vw,4.5rem);line-height:1.05;margin:0;text-shadow:0 6px 20px rgba(0,0,0,.25)}.hero p{font-size:1.25rem;max-width:760px}.btn{display:inline-block;background:var(--dorado);color:#231800;text-decoration:none;font-weight:800;padding:12px 22px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.22);transition:.25s}.btn:hover{transform:translateY(-3px);background:#f0c24a}
+nav{position:sticky;top:0;z-index:10;background:rgba(12,51,34,.96);border-bottom:4px solid var(--dorado);text-align:center;padding:12px 10px}nav a{color:white;text-decoration:none;margin:8px 10px;display:inline-block;font-weight:700;padding:8px 13px;border-radius:18px}nav a:hover{background:rgba(255,255,255,.15);color:#ffe8a3}
+main{width:min(1120px,92%);margin:34px auto}.card{background:rgba(255,255,255,.95);border:2px solid rgba(31,95,59,.18);border-radius:26px;padding:28px;margin:24px 0;box-shadow:0 12px 30px rgba(20,65,40,.13);position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:10px;border:1px dashed rgba(214,167,55,.55);border-radius:20px;pointer-events:none}.card h2{color:var(--verde);font-size:2rem;margin-top:0}.card h3{color:var(--tierra);margin-bottom:4px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}.mini{background:linear-gradient(180deg,#fff,#f3ffe8);border-left:8px solid var(--verde);border-radius:20px;padding:20px;box-shadow:0 8px 18px rgba(0,0,0,.09)}.mini:nth-child(even){border-left-color:var(--azul);background:linear-gradient(180deg,#fff,#eefaff)}.highlight{background:linear-gradient(90deg,#fff7d2,#e9ffe1);border:2px solid #f0d27a;padding:18px;border-radius:18px}.banner{height:230px;border-radius:26px;border:5px solid white;box-shadow:0 10px 26px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:900;font-size:2rem;color:white;text-shadow:0 3px 12px rgba(0,0,0,.45);background:linear-gradient(160deg,#94d266 0 30%,#2d6a4f 31% 50%,#73b3d8 51%)}
+.table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:18px}.table th{background:var(--verde);color:white}.table th,.table td{padding:14px;border:1px solid #dbe8d7;text-align:left}.table tr:nth-child(even){background:#f6fbf3}blockquote{border-left:7px solid var(--dorado);padding:12px 18px;background:#fff9e6;border-radius:12px;margin-left:0}.footer{background:#092519;color:white;text-align:center;padding:30px;margin-top:45px;border-top:8px solid var(--dorado)}.footer a{color:#ffe8a3}.source-list a{color:#0d5b7a;font-weight:700}.tag{display:inline-block;background:#e6f4df;color:#174b2e;padding:5px 10px;border-radius:999px;font-weight:800;margin:3px}.page-title{background:linear-gradient(135deg,#0e3b27,#2d6a4f,#1e88a8);color:white;padding:50px 7%;border-bottom:8px solid var(--dorado)}.page-title h1{margin:0;font-size:clamp(2rem,4vw,3.4rem)}
+@media(max-width:650px){nav a{font-size:.9rem;margin:4px}.card{padding:22px}.hero-content{margin-top:35px}}
